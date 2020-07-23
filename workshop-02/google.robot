@@ -9,6 +9,7 @@ Library    SeleniumLibrary
 กด Enter เพื่อค้นหา
     Press Keys    q    RETURN
 ดูผลการค้นหาว่ามี ยาธาตุน้ำขาว ไหม
+    Title Should Be    ยาธาตุน้ำขาว - ค้นหาด้วย Google
     Element Should Contain    rso    ยาธาตุน้ำขาว
 คลิกที่ลิงค์แรก
     Click Element    //div[@class="r"]//a

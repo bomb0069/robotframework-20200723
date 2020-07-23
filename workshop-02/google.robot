@@ -2,21 +2,22 @@
 Library    SeleniumLibrary
 
 *** Keywords ***
-เปิด Google Chrome
+เปิด Google ด้วย Google Chrome
     Open Browser    http://www.google.co.th    chrome
-พิมพ์สิ่งที่ต้องการจะค้นหาลงในช่องค้นหา
+ค้นหาคำว่า ยาธาตุน้ำขาว
     Input Text    q    ยาธาตุน้ำขาว
-กด Enter ค้นหา
+กด Enter เพื่อค้นหา
     Press Keys    q    RETURN
-กดหน้าถัดไป
-    Click Element    pnnext
+ดูผลการค้นหาว่ามี ยาธาตุน้ำขาว ไหม
+    Element Should Contain    rso    ยาธาตุน้ำขาว
 ปิด Google Chrome
     Close Browser
 
 *** Test Cases ***
 ค้นหา ยาธาตุน้ำขาว ใน Google ผ่าน Chrome
-    เปิด Google Chrome
-    พิมพ์สิ่งที่ต้องการจะค้นหาลงในช่องค้นหา
-    กด Enter ค้นหา
-    กดหน้าถัดไป
+    เปิด Google ด้วย Google Chrome
+    ค้นหาคำว่า ยาธาตุน้ำขาว
+    กด Enter เพื่อค้นหา
+ดูผลการค้นหา
+    ดูผลการค้นหาว่ามี ยาธาตุน้ำขาว ไหม
     ปิด Google Chrome

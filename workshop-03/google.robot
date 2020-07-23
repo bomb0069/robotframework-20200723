@@ -15,3 +15,7 @@ Library    SeleniumLibrary
     Open Browser    http://www.google.com    chrome
 พิมพ์ keyword Stitch ที่ต้องการค้นหา
     Input Text      q      stitch
+กดค้นหา
+    Press Keys      q      ENTER
+ปิด Browser
+    Close Browser

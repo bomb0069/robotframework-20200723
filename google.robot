@@ -6,7 +6,6 @@ Library    SeleniumLibrary
     เปิด google chrome
     ใส่คำที่จะค้นหา ในช่องค้นหา
     กดปุ่มค้าหา
-    รอ google แสดงผลลัพธ์
     Click link แรกที่แสดงผล
 
 *** Keywords ***
@@ -16,3 +15,5 @@ Library    SeleniumLibrary
     Input Text    q    แป้ง
 กดปุ่มค้าหา
     Click Button    btnK
+Click link แรกที่แสดงผล
+    Click Link  https://www.youtube.com/watch?v=12PwJbGA-tI

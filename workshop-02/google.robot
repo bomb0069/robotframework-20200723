@@ -14,3 +14,7 @@ Library    SeleniumLibrary
     Open Browser    http://www.Google.co.th    chrome
 พิมพ์คำที่ต้องการค้นหาลงในช่องค้นหา
     Input Text    q    ส้มตำ
+กดปุ่มค้นหา 
+    Press Keys    q    ENTER
+เลือกเว็บไซต์ที่ต้องการดู
+    Click Link    https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B8%B3

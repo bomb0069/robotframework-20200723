@@ -1,10 +1,6 @@
 *** Settings **
 Library    SeleniumLibrary
 
-
-
-
-
 *** Test Cases ***
 ค้นหา ก๋วยเตี๋ยวเส้นเล็กนำ้ใส ใน Google ผ่าน Chrome
     เปิด Browser ขึ้นมา

@@ -11,6 +11,7 @@ List step for search data in Google
 10. รอจนกว่าจะมีการเปลี่ยนหน้า Browser ไปยังหน้าใหม่
 11. หน้าใหม่ที่ปรากฎจะต้องมีข้อความที่เรากรอกอยู่ในช่องกรอกข้อมความด้านบน
 12. คลิกที่ link แรกที่ปรากฎ เพื่อสืบค้นข้อมูลต่อไป
+13. ปิด Chrome Browser
 
 *** Settings ***
 Library    SeleniumLibrary
@@ -20,6 +21,8 @@ List step for search data in Google
     เปิด chrome ขึ้นมา
     พิมพ์ข้อความที่ต้องการ search ว่า กีต้าร์ ในช่องค้นหา
     กดปุ่ม Enter บน keyboard
+    คลิกที่ link แรกที่ปรากฎ เพื่อสืบค้นข้อมูลต่อไป
+    ปิด Chrome Browser
 
 *** Keywords ***
 เปิด chrome ขึ้นมา
@@ -28,4 +31,9 @@ List step for search data in Google
     Input Text    q    กีต้าร์
 กดปุ่ม Enter บน keyboard
     Press Keys    None    RETURN
+คลิกที่ link แรกที่ปรากฎ เพื่อสืบค้นข้อมูลต่อไป
+    Click Element    xpath: //*[@id="rso"]/div[1]/div/div[1]/a/h3
+ปิด Chrome Browser
+    Close Browser
+
     

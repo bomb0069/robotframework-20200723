@@ -18,9 +18,9 @@ Library    SeleniumLibrary
 กด enter
     Submit Form
 เช็คว่ามีข้อความที่ต้องการหาอยู่ในหน้านั้นไหม ถ้าไม่มีก็หาหน้าถัดไป
-    Title Should Be    ก๋วยเตี๋ยวเส้นเล็กน้ำใส
+    Title Should Be    ก๋วยเตี๋ยวเส้นเล็กน้ำใส - ค้นหาด้วย Google
     Page Should Contain    รูปภาพสำหรับ ก๋วยเตี๋ยวเส้นเล็กน้ำใส
 คลิ๊กลิ้งแรกที่เจอ
-    Click Link    //*[@id="rso"]/div[3]/div/div[1]/a/h3
+    Click Link    https://www.wongnai.com/recipes/ugc/bb9531b177ec4e23b0a5384dcf10db0e
 ปิดหน้าเว็บ
     Close Browser

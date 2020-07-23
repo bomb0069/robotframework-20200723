@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 15:24:45.846" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 15:41:43.319" rpa="false">
 <suite id="s1" name="Google" source="C:\Users\ekkaratpro\Desktop\Software-testing\workshop-02\google.robot">
 <test id="s1-t1" name="ค้นหา kasetsart ใน Google ผ่าน chrome">
 <kw name="เปิด chrome browser ขึ้นมา เข้า url google.co.th">
@@ -9,10 +9,10 @@
 <arg>http://google.co.th</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200723 15:24:46.119" level="INFO">Opening browser 'chrome' to base url 'http://google.co.th'.</msg>
-<status status="PASS" starttime="20200723 15:24:46.118" endtime="20200723 15:24:51.809"></status>
+<msg timestamp="20200723 15:41:43.594" level="INFO">Opening browser 'chrome' to base url 'http://google.co.th'.</msg>
+<status status="PASS" starttime="20200723 15:41:43.593" endtime="20200723 15:41:49.019"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:24:46.118" endtime="20200723 15:24:51.809"></status>
+<status status="PASS" starttime="20200723 15:41:43.593" endtime="20200723 15:41:49.019"></status>
 </kw>
 <kw name="ค้นหาคำว่า kasetsart">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -21,10 +21,10 @@
 <arg>q</arg>
 <arg>kasetsart</arg>
 </arguments>
-<msg timestamp="20200723 15:24:51.810" level="INFO">Typing text 'kasetsart' into text field 'q'.</msg>
-<status status="PASS" starttime="20200723 15:24:51.810" endtime="20200723 15:24:52.019"></status>
+<msg timestamp="20200723 15:41:49.021" level="INFO">Typing text 'kasetsart' into text field 'q'.</msg>
+<status status="PASS" starttime="20200723 15:41:49.020" endtime="20200723 15:41:49.236"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:24:51.809" endtime="20200723 15:24:52.019"></status>
+<status status="PASS" starttime="20200723 15:41:49.020" endtime="20200723 15:41:49.236"></status>
 </kw>
 <kw name="กด Enter">
 <kw name="Press Keys" library="SeleniumLibrary">
@@ -33,12 +33,20 @@
 <arg>q</arg>
 <arg>RETURN</arg>
 </arguments>
-<msg timestamp="20200723 15:24:52.020" level="INFO">Sending key(s) ('RETURN',) to q element.</msg>
-<msg timestamp="20200723 15:24:52.319" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20200723 15:24:52.319" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20200723 15:24:52.020" endtime="20200723 15:24:54.610"></status>
+<msg timestamp="20200723 15:41:49.237" level="INFO">Sending key(s) ('RETURN',) to q element.</msg>
+<msg timestamp="20200723 15:41:49.541" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20200723 15:41:49.541" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20200723 15:41:49.237" endtime="20200723 15:41:51.831"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:24:52.020" endtime="20200723 15:24:54.610"></status>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>kasetsart - ค้นหาด้วย Google</arg>
+</arguments>
+<msg timestamp="20200723 15:41:51.842" level="INFO">Page title is 'kasetsart - ค้นหาด้วย Google'.</msg>
+<status status="PASS" starttime="20200723 15:41:51.831" endtime="20200723 15:41:51.842"></status>
+</kw>
+<status status="PASS" starttime="20200723 15:41:49.237" endtime="20200723 15:41:51.843"></status>
 </kw>
 <kw name="จะต้องพบคำว่า kasetsart ในผลลัพธ์">
 <kw name="Page Should Contain" library="SeleniumLibrary">
@@ -46,28 +54,24 @@
 <arguments>
 <arg>kasetsart</arg>
 </arguments>
-<msg timestamp="20200723 15:24:54.682" level="INFO">Current page contains text 'kasetsart'.</msg>
-<status status="PASS" starttime="20200723 15:24:54.611" endtime="20200723 15:24:54.683"></status>
+<msg timestamp="20200723 15:41:51.892" level="INFO">Current page contains text 'kasetsart'.</msg>
+<status status="PASS" starttime="20200723 15:41:51.846" endtime="20200723 15:41:51.892"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:24:54.611" endtime="20200723 15:24:54.683"></status>
+<status status="PASS" starttime="20200723 15:41:51.845" endtime="20200723 15:41:51.892"></status>
 </kw>
-<kw name="คลิกเลือก link แรก">
-<msg timestamp="20200723 15:24:54.689" level="FAIL">No keyword with name 'คลิกเลือก link แรก' found.</msg>
-<status status="FAIL" starttime="20200723 15:24:54.689" endtime="20200723 15:24:54.689"></status>
-</kw>
-<status status="FAIL" starttime="20200723 15:24:46.117" endtime="20200723 15:24:54.690" critical="yes">No keyword with name 'คลิกเลือก link แรก' found.</status>
+<status status="PASS" starttime="20200723 15:41:43.592" endtime="20200723 15:41:51.893" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20200723 15:24:45.849" endtime="20200723 15:24:54.691"></status>
+<status status="PASS" starttime="20200723 15:41:43.322" endtime="20200723 15:41:51.895"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Google">Google</stat>
+<stat pass="1" fail="0" id="s1" name="Google">Google</stat>
 </suite>
 </statistics>
 <errors>

@@ -7,7 +7,7 @@ Library    SeleniumLibrary
     ค้นหาคำว่า kasetsart
     กด Enter 
     จะต้องพบคำว่า kasetsart ในผลลัพธ์
-    คลิกเลือก link แรก
+    # คลิกเลือก link แรก
 
 *** Keywords ***
 เปิด chrome browser ขึ้นมา เข้า url google.co.th
@@ -17,11 +17,11 @@ Library    SeleniumLibrary
     Input Text    q    kasetsart
 
 กด Enter
-    Press Keys    q    RETURN
+    Press Keys         q                                RETURN
+    Title Should Be    kasetsart - ค้นหาด้วย Google 
 
 จะต้องพบคำว่า kasetsart ในผลลัพธ์
     Page Should Contain    kasetsart
-
 
 
 

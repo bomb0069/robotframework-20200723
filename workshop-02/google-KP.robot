@@ -19,10 +19,13 @@ Library    SeleniumLibrary
 List step for search data in Google
     เปิด chrome ขึ้นมา
     พิมพ์ข้อความที่ต้องการ search ว่า กีต้าร์ ในช่องค้นหา
+    กดปุ่ม Enter บน keyboard
 
 *** Keywords ***
 เปิด chrome ขึ้นมา
     Open Browser    http://www.google.co.th    chrome
 พิมพ์ข้อความที่ต้องการ search ว่า กีต้าร์ ในช่องค้นหา
     Input Text    q    กีต้าร์
+กดปุ่ม Enter บน keyboard
+    Press Keys    None    RETURN
     

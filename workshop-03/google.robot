@@ -15,6 +15,8 @@ Open Google Chrome
 ค้นหาคำว่า iPhone
     Input Text    q    iPhone
 กดเสิช
-    Press Keys    btnK    RETURN
+    Press Keys    q    RETURN
+    # Press Keys    btnk    RETURN
 คลิกลิงก์
-    Click Link    https://www.apple.com/th/iphone/
+    # Click Link    https://www.apple.com/th/iphone/
+    Click Element    //*[@id="rso"]/div[1]/div/div/div[1]/a/h3

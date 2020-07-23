@@ -7,6 +7,7 @@ Library    SeleniumLibrary
     Type something which relate to what you want to search
     Found what you want to search
     Click the 1st link
+    Close Google Chrome
 
 *** Keywords ***
 Open Google in Google Chrome
@@ -17,4 +18,6 @@ Found what you want to search
     Press Keys    q    RETURN
 Click the 1st link
     Click Link    BNK48 Official Website
+Close Google Chrome
+    Close Browser
      

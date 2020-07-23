@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200723 14:43:08.639" rpa="false">
+<suite id="s1" name="Google" source="C:\Users\phongpaktao\Documents\robot-fork\robotframework-20200723\workshop-02\google.robot">
+<test id="s1-t1" name="ค้นหา แมว ใน google ผ่าน Chrome">
+<kw name="เปิด Chrome เข้า google.com">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://www.google.com</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200723 14:43:08.903" level="INFO">Opening browser 'Chrome' to base url 'http://www.google.com'.</msg>
+<status status="PASS" starttime="20200723 14:43:08.902" endtime="20200723 14:43:14.361"></status>
+</kw>
+<status status="PASS" starttime="20200723 14:43:08.902" endtime="20200723 14:43:14.361"></status>
+</kw>
+<kw name="ใส่คำที่ใช้ค้นหา">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>q</arg>
+<arg>แมว</arg>
+</arguments>
+<msg timestamp="20200723 14:43:14.363" level="INFO">Typing text 'แมว' into text field 'q'.</msg>
+<status status="PASS" starttime="20200723 14:43:14.362" endtime="20200723 14:43:14.756"></status>
+</kw>
+<status status="PASS" starttime="20200723 14:43:14.362" endtime="20200723 14:43:14.756"></status>
+</kw>
+<status status="PASS" starttime="20200723 14:43:08.901" endtime="20200723 14:43:14.757" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200723 14:43:08.643" endtime="20200723 14:43:14.760"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Google">Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

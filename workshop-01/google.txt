@@ -1,0 +1,5 @@
+เปิด google chrome
+เข้าเว็บ google.co.th
+พิมพ์ keyword ที่ต้องการค้นหา
+คลิ๊กปุ่ม search หรือ กดปุ่ม enter
+ดูผลลัพธ์จากการค้นหา

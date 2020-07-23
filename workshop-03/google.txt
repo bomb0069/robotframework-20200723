@@ -1,0 +1,6 @@
+Open Chrome
+Go to google
+Input keyword
+enter or click search
+wait for changing the page
+click at the first link on top of page

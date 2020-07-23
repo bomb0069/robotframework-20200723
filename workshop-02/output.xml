@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 14:48:00.494" rpa="false">
+<suite id="s1" name="Google" source="C:\Users\chatchanokwon\Desktop\robotframework-20200723\workshop-02\google.robot">
+<test id="s1-t1" name="เปิด Google Chrome">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://www.google.co.th</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200723 14:48:00.788" level="INFO">Opening browser 'Chrome' to base url 'http://www.google.co.th'.</msg>
+<status status="PASS" starttime="20200723 14:48:00.788" endtime="20200723 14:48:05.801"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>q</arg>
+<arg>Grace</arg>
+</arguments>
+<msg timestamp="20200723 14:48:05.801" level="INFO">Typing text 'Grace' into text field 'q'.</msg>
+<status status="PASS" starttime="20200723 14:48:05.801" endtime="20200723 14:48:06.021"></status>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20200723 14:48:06.021" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20200723 14:48:06.021" endtime="20200723 14:48:08.172"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Grace</arg>
+</arguments>
+<status status="PASS" starttime="20200723 14:48:08.173" endtime="20200723 14:48:08.229"></status>
+</kw>
+<status status="PASS" starttime="20200723 14:48:00.787" endtime="20200723 14:48:08.230" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200723 14:48:00.498" endtime="20200723 14:48:08.231"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Google">Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

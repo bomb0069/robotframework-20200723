@@ -21,10 +21,11 @@ Library    SeleniumLibrary
     Click Button    btnK
 
 ดูผลลัพธ์จากการค้นหา
+    Wait Until Page Contains     การตั้งค่า    20
     Page Should Contain    กล้วยอบเนยโรยเกลือ
 
 Click ลิ้งค์แรก
-    CLick Link    https://pantip.com/topic/39643013
+    Click Link   ทำไมคำลิ้นพันอย่าง "กล้วยอบเนยโรยเกลือ" ต่อให้พูดในใจแล้ว ก็ยัง ...
 
 ปิดหน้าต่าง
     Close Browser

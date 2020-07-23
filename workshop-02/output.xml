@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 14:56:46.825" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 15:11:01.789" rpa="false">
 <suite id="s1" name="Google" source="C:\Users\anchisatea\Documents\Robotframework ws\robotframework-20200723\workshop-02\google.robot">
 <test id="s1-t1" name="ค้นหา anchisa ใน Google ผ่าน Chrome">
 <kw name="เปิดโครมขึ้นมา">
@@ -9,18 +9,30 @@
 <arg>http://google.co.th</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200723 14:56:47.557" level="INFO">Opening browser 'chrome' to base url 'http://google.co.th'.</msg>
-<status status="PASS" starttime="20200723 14:56:47.557" endtime="20200723 14:56:55.183"></status>
+<msg timestamp="20200723 15:11:02.471" level="INFO">Opening browser 'chrome' to base url 'http://google.co.th'.</msg>
+<status status="PASS" starttime="20200723 15:11:02.471" endtime="20200723 15:11:09.413"></status>
 </kw>
-<status status="PASS" starttime="20200723 14:56:47.556" endtime="20200723 14:56:55.184"></status>
+<status status="PASS" starttime="20200723 15:11:02.470" endtime="20200723 15:11:09.413"></status>
 </kw>
-<kw name="เข้า URL google.co.th">
-<msg timestamp="20200723 14:56:55.196" level="FAIL">No keyword with name 'เข้า URL google.co.th' found.</msg>
-<status status="FAIL" starttime="20200723 14:56:55.196" endtime="20200723 14:56:55.196"></status>
+<kw name="ค้นหาคำว่า anchisa">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>q</arg>
+<arg>anchisa</arg>
+</arguments>
+<msg timestamp="20200723 15:11:09.416" level="INFO">Typing text 'anchisa' into text field 'q'.</msg>
+<status status="PASS" starttime="20200723 15:11:09.415" endtime="20200723 15:11:09.852"></status>
 </kw>
-<status status="FAIL" starttime="20200723 14:56:47.554" endtime="20200723 14:56:55.197" critical="yes">No keyword with name 'เข้า URL google.co.th' found.</status>
+<status status="PASS" starttime="20200723 15:11:09.414" endtime="20200723 15:11:09.852"></status>
+</kw>
+<kw name="จะต้องพบคำว่า anchisa ในผลลัพธ์">
+<msg timestamp="20200723 15:11:09.861" level="FAIL">No keyword with name 'จะต้องพบคำว่า anchisa ในผลลัพธ์' found.</msg>
+<status status="FAIL" starttime="20200723 15:11:09.861" endtime="20200723 15:11:09.861"></status>
+</kw>
+<status status="FAIL" starttime="20200723 15:11:02.450" endtime="20200723 15:11:09.864" critical="yes">No keyword with name 'จะต้องพบคำว่า anchisa ในผลลัพธ์' found.</status>
 </test>
-<status status="FAIL" starttime="20200723 14:56:46.835" endtime="20200723 14:56:55.201"></status>
+<status status="FAIL" starttime="20200723 15:11:01.798" endtime="20200723 15:11:09.869"></status>
 </suite>
 <statistics>
 <total>

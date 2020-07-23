@@ -23,5 +23,5 @@ Search
     Wait Until Page Contains    ก๋วยเตี๋ยวเส้นเล็กน้ำใส
     Page Should Contain    ก๋วยเตี๋ยวเส้นเล็กน้ำใส
 
-คลิ๊ก link แรกที่เจอ
+
     

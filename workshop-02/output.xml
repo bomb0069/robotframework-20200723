@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 15:27:38.824" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 15:55:58.202" rpa="false">
 <suite id="s1" name="Google" source="C:\Users\hasaneeyakae\ROBOT WK\robotframework-20200723\workshop-02\google.robot">
 <test id="s1-t1" name="เปิด Google Chrome">
 <kw name="Open Chrome Browser">
@@ -9,10 +9,10 @@
 <arg>http://Google.co.th</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200723 15:27:39.106" level="INFO">Opening browser 'chrome' to base url 'http://Google.co.th'.</msg>
-<status status="PASS" starttime="20200723 15:27:39.106" endtime="20200723 15:27:44.335"></status>
+<msg timestamp="20200723 15:55:58.501" level="INFO">Opening browser 'chrome' to base url 'http://Google.co.th'.</msg>
+<status status="PASS" starttime="20200723 15:55:58.500" endtime="20200723 15:56:03.820"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:27:39.106" endtime="20200723 15:27:44.336"></status>
+<status status="PASS" starttime="20200723 15:55:58.500" endtime="20200723 15:56:03.820"></status>
 </kw>
 <kw name="Input text : ในช่องค้นหา">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -21,57 +21,49 @@
 <arg>q</arg>
 <arg>neeyalioness</arg>
 </arguments>
-<msg timestamp="20200723 15:27:44.339" level="INFO">Typing text 'neeyalioness' into text field 'q'.</msg>
-<status status="PASS" starttime="20200723 15:27:44.338" endtime="20200723 15:27:44.589"></status>
+<msg timestamp="20200723 15:56:03.822" level="INFO">Typing text 'neeyalioness' into text field 'q'.</msg>
+<status status="PASS" starttime="20200723 15:56:03.821" endtime="20200723 15:56:04.073"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:27:44.337" endtime="20200723 15:27:44.590"></status>
+<status status="PASS" starttime="20200723 15:56:03.821" endtime="20200723 15:56:04.074"></status>
 </kw>
 <kw name="กดค้นหา">
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
 <arguments>
 <arg>q</arg>
-<arg>btnK</arg>
 <arg>RETURN</arg>
 </arguments>
-<msg timestamp="20200723 15:27:44.591" level="INFO">Sending key(s) ('btnK', 'RETURN') to q element.</msg>
-<msg timestamp="20200723 15:27:44.889" level="INFO">Sending keys btnK</msg>
-<msg timestamp="20200723 15:27:44.930" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20200723 15:27:44.930" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20200723 15:27:44.591" endtime="20200723 15:27:46.382"></status>
+<msg timestamp="20200723 15:56:04.075" level="INFO">Sending key(s) ('RETURN',) to q element.</msg>
+<msg timestamp="20200723 15:56:04.390" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20200723 15:56:04.390" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20200723 15:56:04.075" endtime="20200723 15:56:05.958"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:27:44.590" endtime="20200723 15:27:46.382"></status>
+<status status="PASS" starttime="20200723 15:56:04.074" endtime="20200723 15:56:05.958"></status>
 </kw>
 <kw name="ตรวจสอบคำที่ตรงกัน">
-<kw name="Click Link" library="SeleniumLibrary">
-<doc>Clicks a link identified by ``locator``.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>https://shopee.co.th/neeyalioness</arg>
+<arg>class:r</arg>
 </arguments>
-<msg timestamp="20200723 15:27:46.384" level="INFO">Clicking link 'https://shopee.co.th/neeyalioness'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200723 15:27:46.735" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200723 15:27:46.429" endtime="20200723 15:27:46.735"></status>
+<msg timestamp="20200723 15:56:05.960" level="INFO">Clicking element 'class:r'.</msg>
+<status status="PASS" starttime="20200723 15:56:05.960" endtime="20200723 15:56:08.548"></status>
 </kw>
-<msg timestamp="20200723 15:27:46.740" level="FAIL">Link with locator 'https://shopee.co.th/neeyalioness' not found.</msg>
-<status status="FAIL" starttime="20200723 15:27:46.383" endtime="20200723 15:27:46.740"></status>
+<status status="PASS" starttime="20200723 15:56:05.959" endtime="20200723 15:56:08.548"></status>
 </kw>
-<status status="FAIL" starttime="20200723 15:27:46.383" endtime="20200723 15:27:46.740"></status>
-</kw>
-<status status="FAIL" starttime="20200723 15:27:39.105" endtime="20200723 15:27:46.741" critical="yes">Link with locator 'https://shopee.co.th/neeyalioness' not found.</status>
+<status status="PASS" starttime="20200723 15:55:58.498" endtime="20200723 15:56:08.549" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20200723 15:27:38.827" endtime="20200723 15:27:46.745"></status>
+<status status="PASS" starttime="20200723 15:55:58.205" endtime="20200723 15:56:08.563"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Google">Google</stat>
+<stat pass="1" fail="0" id="s1" name="Google">Google</stat>
 </suite>
 </statistics>
 <errors>

@@ -1,0 +1,14 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Test Cases ***
+Open Google Chrome Browser
+    เปิด Browser แล้วไปที่ https://google.com
+    ค้นหา natthawitjan ในช่องคำค้นหา
+        
+
+*** Keywords ***
+เปิด Browser แล้วไปที่ https://google.com
+    Open Browser    https://google.com    chrome
+ค้นหา natthawitjan ในช่องคำค้นหา
+    Input Text    q    natthawitjan

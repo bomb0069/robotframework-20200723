@@ -8,6 +8,7 @@ Library    SeleniumLibrary
     กดปุ่มค้นหา
     เลือกเว็บไซต์ที่ต้องการดู
     คลิกไปยังหน้าเว็บไซต์นั้นๆ
+    ปิด Google chrome
 
 *** Keywords ***
 เปิด Google chrome
@@ -20,3 +21,5 @@ Library    SeleniumLibrary
     Click Link    https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B8%B3
 เลือกเว็บไซต์ที่ต้องการดู คลิกไปยังหน้าเว็บไซต์นั้นๆ
     Click Element    //*[@id="rso"]/div[3]/div/div[1]/a/h3
+ปิด Google chrome
+    Close Browser

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 15:31:32.070" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 15:53:42.232" rpa="false">
 <suite id="s1" name="Google" source="C:\Users\anchisatea\Documents\Robotframework ws\robotframework-20200723\workshop-02\google.robot">
 <test id="s1-t1" name="ค้นหา anchisa ใน Google ผ่าน Chrome">
 <kw name="เปิดโครมขึ้นมา">
@@ -9,22 +9,22 @@
 <arg>http://google.co.th</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200723 15:31:32.689" level="INFO">Opening browser 'chrome' to base url 'http://google.co.th'.</msg>
-<status status="PASS" starttime="20200723 15:31:32.688" endtime="20200723 15:31:39.868"></status>
+<msg timestamp="20200723 15:53:42.845" level="INFO">Opening browser 'chrome' to base url 'http://google.co.th'.</msg>
+<status status="PASS" starttime="20200723 15:53:42.845" endtime="20200723 15:53:49.611"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:31:32.687" endtime="20200723 15:31:39.868"></status>
+<status status="PASS" starttime="20200723 15:53:42.844" endtime="20200723 15:53:49.611"></status>
 </kw>
-<kw name="ค้นหาคำว่า anchisa">
+<kw name="ค้นหาคำว่า บิงซูมะม่วง">
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
 <arg>q</arg>
-<arg>anchisa</arg>
+<arg>บิงซูมะม่วง</arg>
 </arguments>
-<msg timestamp="20200723 15:31:39.871" level="INFO">Typing text 'anchisa' into text field 'q'.</msg>
-<status status="PASS" starttime="20200723 15:31:39.871" endtime="20200723 15:31:40.327"></status>
+<msg timestamp="20200723 15:53:49.616" level="INFO">Typing text 'บิงซูมะม่วง' into text field 'q'.</msg>
+<status status="PASS" starttime="20200723 15:53:49.615" endtime="20200723 15:53:50.042"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:31:39.869" endtime="20200723 15:31:40.327"></status>
+<status status="PASS" starttime="20200723 15:53:49.613" endtime="20200723 15:53:50.042"></status>
 </kw>
 <kw name="คลิกปุ่มค้นหา">
 <kw name="Press Keys" library="SeleniumLibrary">
@@ -33,31 +33,44 @@
 <arg>q</arg>
 <arg>RETURN</arg>
 </arguments>
-<msg timestamp="20200723 15:31:40.330" level="INFO">Sending key(s) ('RETURN',) to q element.</msg>
-<msg timestamp="20200723 15:31:41.191" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20200723 15:31:41.191" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20200723 15:31:40.329" endtime="20200723 15:31:43.468"></status>
+<msg timestamp="20200723 15:53:50.044" level="INFO">Sending key(s) ('RETURN',) to q element.</msg>
+<msg timestamp="20200723 15:53:50.892" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20200723 15:53:50.892" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20200723 15:53:50.043" endtime="20200723 15:53:53.445"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:31:40.328" endtime="20200723 15:31:43.468"></status>
+<status status="PASS" starttime="20200723 15:53:50.043" endtime="20200723 15:53:53.446"></status>
 </kw>
-<kw name="จะต้องพบคำว่า anchisa ในผลลัพธ์">
+<kw name="จะต้องพบคำว่า บิงซูมะม่วง ในผลลัพธ์">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
-<arg>anchisa</arg>
+<arg>บิงซูมะม่วง</arg>
 </arguments>
-<msg timestamp="20200723 15:31:43.573" level="INFO">Current page contains text 'anchisa'.</msg>
-<status status="PASS" starttime="20200723 15:31:43.471" endtime="20200723 15:31:43.573"></status>
+<msg timestamp="20200723 15:53:53.573" level="INFO">Current page contains text 'บิงซูมะม่วง'.</msg>
+<status status="PASS" starttime="20200723 15:53:53.447" endtime="20200723 15:53:53.574"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:31:43.469" endtime="20200723 15:31:43.574"></status>
+<status status="PASS" starttime="20200723 15:53:53.446" endtime="20200723 15:53:53.574"></status>
 </kw>
 <kw name="คลิก link แรกที่เจอ">
-<msg timestamp="20200723 15:31:43.583" level="FAIL">No keyword with name 'คลิก link แรกที่เจอ' found.</msg>
-<status status="FAIL" starttime="20200723 15:31:43.583" endtime="20200723 15:31:43.583"></status>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="page"]</arg>
+</arguments>
+<msg timestamp="20200723 15:53:53.576" level="INFO">Clicking link '//*[@id="page"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200723 15:53:54.386" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200723 15:53:53.636" endtime="20200723 15:53:54.386"></status>
 </kw>
-<status status="FAIL" starttime="20200723 15:31:32.683" endtime="20200723 15:31:43.584" critical="yes">No keyword with name 'คลิก link แรกที่เจอ' found.</status>
+<msg timestamp="20200723 15:53:54.397" level="FAIL">Link with locator '//*[@id="page"]' not found.</msg>
+<status status="FAIL" starttime="20200723 15:53:53.575" endtime="20200723 15:53:54.398"></status>
+</kw>
+<status status="FAIL" starttime="20200723 15:53:53.575" endtime="20200723 15:53:54.398"></status>
+</kw>
+<status status="FAIL" starttime="20200723 15:53:42.841" endtime="20200723 15:53:54.399" critical="yes">Link with locator '//*[@id="page"]' not found.</status>
 </test>
-<status status="FAIL" starttime="20200723 15:31:32.077" endtime="20200723 15:31:43.588"></status>
+<status status="FAIL" starttime="20200723 15:53:42.240" endtime="20200723 15:53:54.404"></status>
 </suite>
 <statistics>
 <total>

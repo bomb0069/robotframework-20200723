@@ -14,3 +14,5 @@ Library    SeleniumLibrary
     Open Browser    http://google.co.th    chrome
 กรอกข้อมูลที่ต้องการค้นหา
     Input text    q    ขนม
+กด enter หรือกดที่ช่องค้นหา
+    Press Keys    q    ENTER

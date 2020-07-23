@@ -7,7 +7,7 @@ Library    SeleniumLibrary
     ค้นหาคำว่า kasetsart
     กด Enter 
     จะต้องพบคำว่า kasetsart ในผลลัพธ์
-    # คลิกเลือก link แรก
+    คลิกเลือก link แรก
 
 *** Keywords ***
 เปิด chrome browser ขึ้นมา เข้า url google.co.th
@@ -22,6 +22,9 @@ Library    SeleniumLibrary
 
 จะต้องพบคำว่า kasetsart ในผลลัพธ์
     Page Should Contain    kasetsart
+
+คลิกเลือก link แรก
+    Click Link    //*[@id="rso"]/div[1]/div/div/div[1]/a
 
 
 

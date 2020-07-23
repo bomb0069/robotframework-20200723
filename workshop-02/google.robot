@@ -17,3 +17,5 @@ Library    SeleniumLibrary
     Input Text    q    ก๋วยเตี๋ยวเส้นเล็กน้ำใส    clear=True
 กด enter
     Submit Form
+เช็คว่ามีข้อความที่ต้องการหาอยู่ในหน้านั้นไหม ถ้าไม่มีก็หาหน้าถัดไป
+    Wait Until Page Contains    ก๋วยเตี๋ยวเส้นเล็กน้ำใส

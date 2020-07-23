@@ -13,3 +13,5 @@ Library    SeleniumLibrary
     Open Browser    http://google.co.th    chrome
 พิมพ์คีย์เวิร์ดที่ต้องการจะใช้ค้นหา
     Input Text    q    kerati kasisuwan
+กดenter
+    Press keys    q    ENTER

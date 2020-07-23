@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 14:59:30.658" rpa="false">
+<suite id="s1" name="Google" source="C:\Users\ekkaratpro\Desktop\Software-testing\workshop-02\google.robot">
+<test id="s1-t1" name="ค้นหา kasetsart ใน Google ผ่าน chrome">
+<kw name="เปิด chrome browser ขึ้นมา เข้า url google.co.th">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://google.co.th</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 14:59:30.921" level="INFO">Opening browser 'chrome' to base url 'http://google.co.th'.</msg>
+<status status="PASS" starttime="20200723 14:59:30.921" endtime="20200723 14:59:36.641"></status>
+</kw>
+<status status="PASS" starttime="20200723 14:59:30.920" endtime="20200723 14:59:36.641"></status>
+</kw>
+<kw name="ค้นหาคำว่า kasetsart">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>q</arg>
+<arg>kasetsart</arg>
+</arguments>
+<msg timestamp="20200723 14:59:36.643" level="INFO">Typing text 'kasetsart' into text field 'q'.</msg>
+<status status="PASS" starttime="20200723 14:59:36.642" endtime="20200723 14:59:36.865"></status>
+</kw>
+<status status="PASS" starttime="20200723 14:59:36.642" endtime="20200723 14:59:36.865"></status>
+</kw>
+<kw name="กด Enter">
+<msg timestamp="20200723 14:59:36.871" level="FAIL">No keyword with name 'กด Enter' found.</msg>
+<status status="FAIL" starttime="20200723 14:59:36.870" endtime="20200723 14:59:36.871"></status>
+</kw>
+<status status="FAIL" starttime="20200723 14:59:30.919" endtime="20200723 14:59:36.871" critical="yes">No keyword with name 'กด Enter' found.</status>
+</test>
+<status status="FAIL" starttime="20200723 14:59:30.661" endtime="20200723 14:59:36.874"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Google">Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

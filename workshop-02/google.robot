@@ -8,6 +8,7 @@ Library    SeleniumLibrary
     คลิกปุ่มค้นหา
     จะต้องพบคำว่า anchisa ในผลลัพธ์
     คลิก link แรกที่เจอ
+    ปิด Browser
 
 *** Keywords ***
 เปิดโครมขึ้นมา
@@ -18,5 +19,8 @@ Library    SeleniumLibrary
 
 คลิกปุ่มค้นหา
     Press Keys    q    RETURN
+
+จะต้องพบคำว่า anchisa ในผลลัพธ์
+    Page Should Contain    anchisa    
 
 

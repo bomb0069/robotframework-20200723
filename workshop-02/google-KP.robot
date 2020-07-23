@@ -1,0 +1,24 @@
+List step for search data in Google
+1. เปิด Chrome Browser
+2. กดที่ช่องกรอก URL (บริเวณแถบบนของ Browser)
+3. พิมพ์ว่า http://www.google.co.th
+4. กดปุ่ม Enter บน keyboard
+5. รอจนกว่าจะมีการเปลี่ยนหน้า Browser ไปยังหน้าใหม่6
+6. หน้าใหม่ที่ปรากฎขึ้น จะต้องมีช่องสำหรับการ search และมีปุ่มค้นหาสำหรับการกดเพื่อทำการ search
+7. กดที่ช่องสำหรับกรอกข้อความที่ต้องการ search
+8. พิมพ์ข้อความที่ต้องการ search
+9. กดปุ่มค้นหา หรือกดปุ่ม enter
+10. รอจนกว่าจะมีการเปลี่ยนหน้า Browser ไปยังหน้าใหม่
+11. หน้าใหม่ที่ปรากฎจะต้องมีข้อความที่เรากรอกอยู่ในช่องกรอกข้อมความด้านบน
+12. คลิกที่ link แรกที่ปรากฎ เพื่อสืบค้นข้อมูลต่อไป
+
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Test Cases ***
+เปิด Chrome Browser
+    เปิด chrome ขึ้นมา
+
+*** Keywords ***
+เปิด chrome ขึ้นมา
+    Open Browser    http://www.google.co.th    chrome

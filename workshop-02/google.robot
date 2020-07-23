@@ -13,7 +13,7 @@ Library    SeleniumLibrary
     Open Browser    http://google.co.th    chrome
 
 พิมพ์คำที่ต้องการสืบค้นลงในช่อง search   
-    Input Text    q    ก๋วยเตี๋ยวเส้นเล็กนำ้ใส   
+    Input Text    q    ก๋วยเตี๋ยวเส้นเล็กนำ้ใส    
 
 แสดงลำดับ website ต่างๆ ที่มีคำที่สืบค้น หรือเกี่ยวข้อง
     Press Keys    q    RETURN

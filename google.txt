@@ -1,0 +1,6 @@
+- เปิด chrome browser ขึ้นมา
+- พิมพ์ google.co.th
+- กรอกข้อความที่จะทำการ search 
+- กด Enter
+- ไล่ดู link ตามคำที่ search 
+- คลิกเลือก link ที่สนใจ

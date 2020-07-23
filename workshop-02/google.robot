@@ -5,6 +5,7 @@ Library    SeleniumLibrary
 ค้นหา anchisa ใน Google ผ่าน Chrome
     เปิดโครมขึ้นมา
     ค้นหาคำว่า anchisa
+    คลิกปุ่มค้นหา
     จะต้องพบคำว่า anchisa ในผลลัพธ์
     คลิก link แรกที่เจอ
 
@@ -14,4 +15,8 @@ Library    SeleniumLibrary
 
 ค้นหาคำว่า anchisa
     Input Text    q    anchisa
+
+คลิกปุ่มค้นหา
+    Press Keys    q    RETURN
+
 

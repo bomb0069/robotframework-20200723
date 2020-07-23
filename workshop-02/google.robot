@@ -21,6 +21,6 @@ Library    SeleniumLibrary
     Title Should Be    ก๋วยเตี๋ยวเส้นเล็กน้ำใส - ค้นหาด้วย Google
     Page Should Contain    รูปภาพสำหรับ ก๋วยเตี๋ยวเส้นเล็กน้ำใส
 คลิ๊กลิ้งแรกที่เจอ
-    Click Link    https://www.wongnai.com/recipes/ugc/bb9531b177ec4e23b0a5384dcf10db0e
+    Click Link    สูตร ก๋วยเตี๋ยวเส้นใหญ่น้ำใส พร้อมวิธีทำโดย Kim Pakiny - Wongnai ...
 ปิดหน้าเว็บ
     Close Browser

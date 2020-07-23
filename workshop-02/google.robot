@@ -15,3 +15,7 @@ Library    SeleniumLibrary
     Input Text    q    kerati kasisuwan
 กดenter
     Press keys    q    ENTER
+คลิ้กที่ลิงค์ที่ต้องการ
+    Click Link    //*[@id="rso"]/div[1]/div/div/div[1]/a
+ปิดหน้าเว็บ
+    Close Browser

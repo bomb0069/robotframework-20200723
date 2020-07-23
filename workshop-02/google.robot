@@ -24,7 +24,6 @@ Library    SeleniumLibrary
     Page Should Contain    บิงซูมะม่วง
 
 คลิก link แรกที่เจอ
-    Click Link    //*[@id="tiwanon-js"]
-
+    Click Link    https://food.mthai.com/dessert/129621.html
 
 

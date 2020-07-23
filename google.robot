@@ -7,6 +7,7 @@ Library    SeleniumLibrary
     ใส่คำที่จะค้นหา ในช่องค้นหา
     กดปุ่มค้าหา
     Click link แรกที่แสดงผล
+    ปิด Browser
 
 *** Keywords ***
 เปิด google chrome
@@ -17,3 +18,5 @@ Library    SeleniumLibrary
     Click Button    btnK
 Click link แรกที่แสดงผล
     Click Link  https://www.youtube.com/watch?v=12PwJbGA-tI
+ปิด Browser
+    Close Window

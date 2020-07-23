@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 14:53:14.823" rpa="false">
+<suite id="s1" name="Google" source="C:\Users\anchisatea\Documents\Robotframework ws\robotframework-20200723\workshop-02\google.robot">
+<test id="s1-t1" name="ค้นหา anchisa ใน Google ผ่าน Chrome">
+<kw name="เปิดโครมขึ้นมา">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://google.co.th</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 14:53:15.559" level="INFO">Opening browser 'chrome' to base url 'http://google.co.th'.</msg>
+<status status="PASS" starttime="20200723 14:53:15.558" endtime="20200723 14:53:23.266"></status>
+</kw>
+<status status="PASS" starttime="20200723 14:53:15.557" endtime="20200723 14:53:23.266"></status>
+</kw>
+<kw name="เข้า URL google.co.th">
+<msg timestamp="20200723 14:53:23.281" level="FAIL">No keyword with name 'เข้า URL google.co.th' found.</msg>
+<status status="FAIL" starttime="20200723 14:53:23.280" endtime="20200723 14:53:23.282"></status>
+</kw>
+<status status="FAIL" starttime="20200723 14:53:15.555" endtime="20200723 14:53:23.284" critical="yes">No keyword with name 'เข้า URL google.co.th' found.</status>
+</test>
+<status status="FAIL" starttime="20200723 14:53:14.832" endtime="20200723 14:53:23.287"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Google">Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

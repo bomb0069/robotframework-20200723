@@ -1,7 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary 
 
-
 *** Test Cases ***
 ค้นหา anchisa ใน Google ผ่าน Chrome
     เปิดโครมขึ้นมา

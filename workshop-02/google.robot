@@ -24,7 +24,7 @@ Library    SeleniumLibrary
     Page Should Contain    บิงซูมะม่วง
 
 คลิก link แรกที่เจอ
-    Click Link    //*[@id="rso"]/div[3]/div/div[1]/a/h3
+    Click Element    //*[@id="rso"]/div[3]/div/div[1]/a/h3
 
 ปิด Browser
     Close Browser

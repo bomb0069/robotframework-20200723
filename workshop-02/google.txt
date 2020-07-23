@@ -4,16 +4,21 @@ Library    SeleniumLibrary
 *** Test Cases ***
 Open Google Chrome Browser
     เปิด Browser แล้วไปที่ https://google.com
-    ใส่คำค้นหา natthawitjan ในช่องคำค้นหา
-    Press enter เพื่อค้นหา
+    ใส่คำค้นหา allianz technology ในช่องคำค้นหา
+    Press enter ที่ช่องค้นหา เพื่อค้นหา
+    ตรวจสอบหน้าผลลัพท์ว่า มีคำค้นหา allianz technology
+     
     
         
 
 *** Keywords ***
 เปิด Browser แล้วไปที่ https://google.com
     Open Browser    https://google.com    chrome
-ใส่คำค้นหา natthawitjan ในช่องคำค้นหา
-    Input Text    q    natthawitjan
-Press enter เพื่อค้นหา
+ใส่คำค้นหา allianz technology ในช่องคำค้นหา
+    Input Text    q    allianz technology
+Press enter ที่ช่องค้นหา เพื่อค้นหา
     Press Keys    q    RETURN
+ตรวจสอบหน้าผลลัพท์ว่า มีคำค้นหา allianz technology
+    Wait Until Page Contains    allianz technology
+    
     

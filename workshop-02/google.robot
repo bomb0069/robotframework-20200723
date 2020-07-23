@@ -10,6 +10,8 @@ Library    SeleniumLibrary
     Press Keys    q    RETURN
 ดูผลการค้นหาว่ามี ยาธาตุน้ำขาว ไหม
     Element Should Contain    rso    ยาธาตุน้ำขาว
+คลิกที่ลิงค์แรก
+    Click Element    //div[@class="r"]//a
 ปิด Google Chrome
     Close Browser
 
@@ -20,4 +22,5 @@ Library    SeleniumLibrary
     กด Enter เพื่อค้นหา
 ดูผลการค้นหา
     ดูผลการค้นหาว่ามี ยาธาตุน้ำขาว ไหม
+    คลิกที่ลิงค์แรก
     ปิด Google Chrome

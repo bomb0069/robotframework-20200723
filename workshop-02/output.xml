@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 15:56:07.324" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 16:05:42.392" rpa="false">
 <suite id="s1" name="Google" source="C:\Users\anchisatea\Documents\Robotframework ws\robotframework-20200723\workshop-02\google.robot">
 <test id="s1-t1" name="ค้นหา anchisa ใน Google ผ่าน Chrome">
 <kw name="เปิดโครมขึ้นมา">
@@ -9,10 +9,10 @@
 <arg>http://google.co.th</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200723 15:56:07.877" level="INFO">Opening browser 'chrome' to base url 'http://google.co.th'.</msg>
-<status status="PASS" starttime="20200723 15:56:07.876" endtime="20200723 15:56:15.263"></status>
+<msg timestamp="20200723 16:05:42.988" level="INFO">Opening browser 'chrome' to base url 'http://google.co.th'.</msg>
+<status status="PASS" starttime="20200723 16:05:42.988" endtime="20200723 16:05:51.188"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:56:07.876" endtime="20200723 15:56:15.264"></status>
+<status status="PASS" starttime="20200723 16:05:42.987" endtime="20200723 16:05:51.190"></status>
 </kw>
 <kw name="ค้นหาคำว่า บิงซูมะม่วง">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -21,10 +21,10 @@
 <arg>q</arg>
 <arg>บิงซูมะม่วง</arg>
 </arguments>
-<msg timestamp="20200723 15:56:15.267" level="INFO">Typing text 'บิงซูมะม่วง' into text field 'q'.</msg>
-<status status="PASS" starttime="20200723 15:56:15.266" endtime="20200723 15:56:15.854"></status>
+<msg timestamp="20200723 16:05:51.192" level="INFO">Typing text 'บิงซูมะม่วง' into text field 'q'.</msg>
+<status status="PASS" starttime="20200723 16:05:51.191" endtime="20200723 16:05:51.677"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:56:15.265" endtime="20200723 15:56:15.854"></status>
+<status status="PASS" starttime="20200723 16:05:51.191" endtime="20200723 16:05:51.678"></status>
 </kw>
 <kw name="คลิกปุ่มค้นหา">
 <kw name="Press Keys" library="SeleniumLibrary">
@@ -33,12 +33,12 @@
 <arg>q</arg>
 <arg>RETURN</arg>
 </arguments>
-<msg timestamp="20200723 15:56:15.861" level="INFO">Sending key(s) ('RETURN',) to q element.</msg>
-<msg timestamp="20200723 15:56:16.830" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20200723 15:56:16.830" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20200723 15:56:15.860" endtime="20200723 15:56:20.299"></status>
+<msg timestamp="20200723 16:05:51.680" level="INFO">Sending key(s) ('RETURN',) to q element.</msg>
+<msg timestamp="20200723 16:05:52.560" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20200723 16:05:52.560" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20200723 16:05:51.679" endtime="20200723 16:05:56.079"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:56:15.857" endtime="20200723 15:56:20.300"></status>
+<status status="PASS" starttime="20200723 16:05:51.679" endtime="20200723 16:05:56.079"></status>
 </kw>
 <kw name="จะต้องพบคำว่า บิงซูมะม่วง ในผลลัพธ์">
 <kw name="Page Should Contain" library="SeleniumLibrary">
@@ -46,31 +46,29 @@
 <arguments>
 <arg>บิงซูมะม่วง</arg>
 </arguments>
-<msg timestamp="20200723 15:56:20.470" level="INFO">Current page contains text 'บิงซูมะม่วง'.</msg>
-<status status="PASS" starttime="20200723 15:56:20.306" endtime="20200723 15:56:20.470"></status>
+<msg timestamp="20200723 16:05:56.212" level="INFO">Current page contains text 'บิงซูมะม่วง'.</msg>
+<status status="PASS" starttime="20200723 16:05:56.081" endtime="20200723 16:05:56.212"></status>
 </kw>
-<status status="PASS" starttime="20200723 15:56:20.305" endtime="20200723 15:56:20.471"></status>
+<status status="PASS" starttime="20200723 16:05:56.081" endtime="20200723 16:05:56.212"></status>
 </kw>
 <kw name="คลิก link แรกที่เจอ">
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@id="tiwanon-js"]</arg>
+<arg>https://food.mthai.com/dessert/129621.html</arg>
 </arguments>
-<msg timestamp="20200723 15:56:20.473" level="INFO">Clicking link '//*[@id="tiwanon-js"]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200723 15:56:21.349" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200723 15:56:20.567" endtime="20200723 15:56:21.350"></status>
+<msg timestamp="20200723 16:05:56.214" level="INFO">Clicking link 'https://food.mthai.com/dessert/129621.html'.</msg>
+<status status="PASS" starttime="20200723 16:05:56.214" endtime="20200723 16:06:03.918"></status>
 </kw>
-<msg timestamp="20200723 15:56:21.357" level="FAIL">Link with locator '//*[@id="tiwanon-js"]' not found.</msg>
-<status status="FAIL" starttime="20200723 15:56:20.472" endtime="20200723 15:56:21.357"></status>
+<status status="PASS" starttime="20200723 16:05:56.213" endtime="20200723 16:06:03.918"></status>
 </kw>
-<status status="FAIL" starttime="20200723 15:56:20.472" endtime="20200723 15:56:21.358"></status>
+<kw name="ปิด Browser">
+<msg timestamp="20200723 16:06:03.926" level="FAIL">No keyword with name 'ปิด Browser' found.</msg>
+<status status="FAIL" starttime="20200723 16:06:03.926" endtime="20200723 16:06:03.926"></status>
 </kw>
-<status status="FAIL" starttime="20200723 15:56:07.874" endtime="20200723 15:56:21.359" critical="yes">Link with locator '//*[@id="tiwanon-js"]' not found.</status>
+<status status="FAIL" starttime="20200723 16:05:42.985" endtime="20200723 16:06:03.928" critical="yes">No keyword with name 'ปิด Browser' found.</status>
 </test>
-<status status="FAIL" starttime="20200723 15:56:07.331" endtime="20200723 15:56:21.364"></status>
+<status status="FAIL" starttime="20200723 16:05:42.398" endtime="20200723 16:06:03.942"></status>
 </suite>
 <statistics>
 <total>

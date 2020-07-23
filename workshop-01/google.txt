@@ -1,0 +1,6 @@
+เปิด browser google chrome
+เลื่อน cursor ไปที่ url 
+พิมพ์ คำที่ต้องการ search
+กด enter
+คลิก link แรกที่เจอ หรือคลิก link ที่สนใจ
+ปิด browser เมื่อเสร็จ

@@ -7,16 +7,14 @@ Library    SeleniumLibrary
     # Press Key    name=q    \\13
 
 เปิด Google Chrome แล้วเข้า URL www.google.co.th
-พิมพ์ robotframework ที่ต้องการค้นหาลงในช่องค้นหา
-กดปุ่ม Enter
-จะต้องพบคำว่า robotframework ในผลลัพท์
 
     เปิด Google Chrome แล้วเข้า URL www.google.co.th
     พิมพ์ robotframework ที่ต้องการค้นหาลงในช่องค้นหา
     กดปุ่ม Enter
     จะต้องพบคำว่า robotframework ในผลลัพท์
+    ปิด Browser
 
-***Keywords***
+*** Keywords ***
 
 เปิด Google Chrome แล้วเข้า URL www.google.co.th
     Open Browser    http://www.google.co.th    gc
@@ -25,7 +23,10 @@ Library    SeleniumLibrary
     Input Text    q   robotframework
 
 กดปุ่ม Enter
-    Press Key    name=q    \\13
+    Press Keys    q    RETURN
 
 จะต้องพบคำว่า robotframework ในผลลัพท์
-    Wait Until Page Contains    robotframework
+    Title Should Be    robotframework - ค้นหาด้วย Google
+
+ปิด Browser
+    Close Browser

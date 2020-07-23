@@ -1,0 +1,5 @@
+- เปิด chrome browser ขึ้นมา
+- พิมพ์ google.co.th
+- กรอกข้อความที่จะทำการ search 
+- กด Enter
+- คลิกเลือก link แรก

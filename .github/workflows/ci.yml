@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   robot_test:
@@ -18,4 +18,5 @@ jobs:
         env:
           BROWSER: chrome
           ROBOT_TESTS_DIR: ${{ github.workspace }}/workshop-04
+          ROBOT_OPTIONS: -v URL:http://www.google.com
 #           ROBOT_REPORTS_DIR: ${{ github.workspace }}/reports

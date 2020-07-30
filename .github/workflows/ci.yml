@@ -18,5 +18,5 @@ jobs:
         env:
           BROWSER: chrome
           ROBOT_TESTS_DIR: ${{ github.workspace }}/google.robot
-          ROBOT_OPTIONS: -v URL:http://www.bom0069.com
+          ROBOT_OPTIONS: -v URL:http://www.google.com
          

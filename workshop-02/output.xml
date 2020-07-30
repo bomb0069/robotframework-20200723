@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 14:40:46.305" rpa="false">
+<suite id="s1" name="Google" source="C:\Users\numlabyodrep\Desktop\robot-workshop\robotframework-20200723\workshop-02\google.robot">
+<test id="s1-t1" name="เปิด Google Chrome">
+<kw name="เปิดโครม">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://www.google.co.th</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 14:40:46.582" level="INFO">Opening browser 'chrome' to base url 'http://www.google.co.th'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200723 14:40:46.588" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200723 14:40:46.588" endtime="20200723 14:40:46.588"></status>
+</kw>
+<msg timestamp="20200723 14:40:46.594" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" starttime="20200723 14:40:46.581" endtime="20200723 14:40:46.594"></status>
+</kw>
+<status status="FAIL" starttime="20200723 14:40:46.581" endtime="20200723 14:40:46.594"></status>
+</kw>
+<status status="FAIL" starttime="20200723 14:40:46.580" endtime="20200723 14:40:46.595" critical="yes">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<status status="FAIL" starttime="20200723 14:40:46.309" endtime="20200723 14:40:46.597"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Google">Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Test Cases ***
-เปิด Google Chrome
+ค้นหา keyword
     เปิด Google Chrome
     พิมพ์ keyword ของสิ่งที่ต้องค้นหาขึ้นมา
     กดปุ่ม ค้นหา

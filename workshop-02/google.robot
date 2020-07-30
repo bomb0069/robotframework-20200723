@@ -19,7 +19,7 @@ Library    SeleniumLibrary
 
 กด Enter
     Press Keys         q                                RETURN
-    Title Should Be    kasetsart - ค้นหาด้วย Google 
+    Title Should Be    kasetsart - Google Search
 
 จะต้องพบคำว่า kasetsart ในผลลัพธ์
     Wait Until Page Contains    kasetsart    3

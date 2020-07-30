@@ -1,3 +1,4 @@
+ithub/workflows/ci.yml
 name: CI
 
 on:
@@ -18,3 +19,4 @@ jobs:
         env:
           BROWSER: chrome
           ROBOT_TESTS_DIR: ${{ github.workspace }}/workshop-04
+          ROBOT_OPTIONS: -v URL:http://www.google.co.th

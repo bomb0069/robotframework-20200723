@@ -19,7 +19,6 @@ Library    SeleniumLibrary
     Submit Form
 เช็คว่ามีข้อความที่ต้องการหาอยู่ในหน้านั้นไหม ถ้าไม่มีก็หาหน้าถัดไป
     Title Should Be    ก๋วยเตี๋ยวเส้นเล็กน้ำใส - Google Search
-    Page Should Contain    รูปภาพสำหรับ ก๋วยเตี๋ยวเส้นเล็กน้ำใส
 คลิ๊กลิ้งแรกที่เจอ
     Click Element    class:r
 ปิดหน้าเว็บ

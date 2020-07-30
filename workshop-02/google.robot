@@ -25,7 +25,7 @@ Library    SeleniumLibrary
     Wait Until Page Contains    kasetsart    3
 
 คลิกเลือก link แรก
-    Click Link    //*[@id="rso"]/div[1]/div/div/div[1]/a
+    Click Link    //div[@class="r"]//a
 
 ปิดหน้าเว็บ
     Close Browser

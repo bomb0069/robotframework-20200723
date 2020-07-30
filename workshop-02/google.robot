@@ -1,6 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+*** Variables ***
+${URL}    http://www.google.co.th
+
 *** Test Cases ***
 เปิด Google Chrome
     เปิดโครมเข้าไปที่ www.google.co.th
@@ -12,7 +15,7 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 เปิดโครมเข้าไปที่ www.google.co.th
-    Open Browser    http://www.google.co.th    chrome
+    Open Browser    ${URL}    chrome
 ป้อนข้อความที่ต้องการค้นหา
     Input Text    q    ก๋วยเตี๋ยวเส้นเล็กน้ำใส    clear=True
 กด enter

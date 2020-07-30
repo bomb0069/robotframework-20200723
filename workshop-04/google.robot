@@ -1,24 +1,9 @@
 *** Settings ***
-Library    SeleniumLibrary
+Resource    keywords.robot
+Test Setup    เปิดกูเกิลโครมขึ้นมา เข้า URL google.co.th
+Test Template    ค้นหาบน Google ผ่าน Chrome
+Test Teardown    ปิด
 
-*** Test Cases ***
-ค้นหา joker movie ใน Google Chrome ผ่าน Chrome
-    เปิดกูเกิลโครมขึ้นมา เข้า URL google.co.th
-    ใส่ข้อความค้นหา
-    กดปุ่มค้นหา รอผลการค้นหาปรากฏตามข้อความที่ใส่ไป
-    คลิกเข้าที่ผลค้นหาอันแรก
-    ปิด
-
-*** Keywords ***
-เปิดกูเกิลโครมขึ้นมา เข้า URL google.co.th
-    Open Browser    http://www.google.co.th    chrome
-ใส่ข้อความค้นหา
-    Input Text    q    joker movie
-กดปุ่มค้นหา รอผลการค้นหาปรากฏตามข้อความที่ใส่ไป
-    Press Keys         q                                 RETURN
-    Title Should Be    joker movie - ค้นหาด้วย Google
-คลิกเข้าที่ผลค้นหาอันแรก
-    # Click Element    //*[@id="rso"]/div[1]/div[2]/div[1]/a/h3
-    Click Link    //div[@class="r"]//a
-ปิด
-    Close Browser
+*** Test Cases ***                          SEARCH_TEXT
+ค้นหา joker movie ใน Google ผ่าน Chrome       joker movie
+ค้นหารังนกใน Google ผ่าน Chrome                รังนก

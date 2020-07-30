@@ -9,7 +9,7 @@ Open Google Chrome
     search iPhone
     click search
     click link
-    close browser
+    finish
     
 *** Keywords ***
 open chrome
@@ -22,5 +22,5 @@ click search
 click link
     # Click Link    https://www.apple.com/th/iphone/
     Click Element    //div[@class="r"]//a
-close browser
+finish
     Close Browser

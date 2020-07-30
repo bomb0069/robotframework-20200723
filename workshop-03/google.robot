@@ -21,6 +21,6 @@ click search
     # Press Keys    btnk    RETURN
 click link
     # Click Link    https://www.apple.com/th/iphone/
-    Click Element    //*[@id="vn1s0p1c0"]/h3
+    Click Element    //div[@class="r"]//a
 close browser
     Close Browser

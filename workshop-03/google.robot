@@ -17,6 +17,6 @@ Library    SeleniumLibrary
 กดค้นหา
     Press Keys      q      ENTER
 กดเข้า link แรกที่เจอ เพื่อดูข้อมูล
-    Click Element   //*[@id="rso"]/div[1]/div/div[1]/a/h3
+    Click Element   class:r
 ปิด Browser
     Close Browser

@@ -6,7 +6,6 @@ Library    SeleniumLibrary
     เปิด Google Chrome เข้าลิงก์ www.google.co.th
     พิมพ์ keyword Stitch ที่ต้องการค้นหา
     กดค้นหา
-    กดเข้า link แรกที่เจอ เพื่อดูข้อมูล
     ปิด Browser
 
 *** Keywords ***
@@ -14,9 +13,8 @@ Library    SeleniumLibrary
     Open Browser    http://www.google.com    chrome
 พิมพ์ keyword Stitch ที่ต้องการค้นหา
     Input Text      q      stitch
-กดค้นหา
     Press Keys      q      ENTER
-กดเข้า link แรกที่เจอ เพื่อดูข้อมูล
+กดค้นหา
     Click Element   class:r
 ปิด Browser
     Close Browser

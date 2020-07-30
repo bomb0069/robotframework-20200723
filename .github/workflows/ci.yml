@@ -1,4 +1,3 @@
-ithub/workflows/ci.yml
 name: CI
 
 on:

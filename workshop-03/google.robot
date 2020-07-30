@@ -18,3 +18,5 @@ Library    SeleniumLibrary
     Press Keys    q    RETURN
 เจอคำค้นหาในหน้าเว็ป
     Wait Until Page Contains    รถ    3
+คลิกลิงก์แรกที่ค้นหาเจอ
+    Click Element    //*[@id="rso"]/div[1]/div/div[1]/a/h3

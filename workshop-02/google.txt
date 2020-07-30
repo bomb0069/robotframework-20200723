@@ -1,0 +1,28 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Test Cases ***
+Open Google Chrome Browser
+    เปิด Browser แล้วไปที่ https://google.com
+    ใส่คำค้นหา allianz technology ในช่องคำค้นหา
+    Press enter ที่ช่องค้นหา เพื่อค้นหา
+    รอจนกระทั่ง คำว่า allianz technology อยู่บนหน้าผลลัพท์
+    คลิก link แรก
+
+     
+    
+        
+
+*** Keywords ***
+เปิด Browser แล้วไปที่ https://google.com
+    Open Browser    https://google.com    chrome
+ใส่คำค้นหา allianz technology ในช่องคำค้นหา
+    Input Text    q    allianz technology
+Press enter ที่ช่องค้นหา เพื่อค้นหา
+    Press Keys    q    RETURN
+รอจนกระทั่ง คำว่า allianz technology อยู่บนหน้าผลลัพท์
+    Wait Until Page Contains    allianz technology
+คลิก link แรก
+    Click Element    //*[@id="rso"]/div[1]/div/div[1]/a
+
+    
